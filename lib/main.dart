@@ -49,6 +49,7 @@ class MyHomePage extends StatelessWidget {
 
   final Text welcomeText = const Text(
     'Shift Scheduler',
+    textAlign: TextAlign.center,
     style: TextStyle(
       fontSize: 60,
       color: Colors.white,
@@ -66,13 +67,18 @@ class MyHomePage extends StatelessWidget {
       onPressed: () {},
       style: ElevatedButton.styleFrom(
         primary: Colors.white,
-        padding: const EdgeInsets.symmetric(vertical: 28, horizontal: 160),
       ),
-      child: const Text(
-        'Start',
-        style: TextStyle(
-          fontSize: 26,
-          color: Colors.blueAccent,
+      child: const SizedBox(
+        width: 320,
+        height: 56,
+        child: Center(
+          child: Text(
+            'Start',
+            style: TextStyle(
+              fontSize: 26,
+              color: Colors.blueAccent,
+            ),
+          ),
         ),
       ));
 }

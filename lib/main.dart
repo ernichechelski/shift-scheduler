@@ -15,20 +15,15 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(),
+      home: MyHomePage(),
       debugShowCheckedModeBanner: false,
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key}) : super(key: key);
+class MyHomePage extends StatelessWidget {
+  MyHomePage({Key? key}) : super(key: key);
 
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -52,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-  Text welcomeText = const Text(
+  final Text welcomeText = const Text(
     'Shift Scheduler',
     style: TextStyle(
       fontSize: 60,
@@ -61,13 +56,13 @@ class _MyHomePageState extends State<MyHomePage> {
     ),
   );
 
-  Icon welcomeIcon = const Icon(
+  final Icon welcomeIcon = const Icon(
     Icons.calendar_month_outlined,
     color: Colors.white,
     size: 250,
   );
 
-  ElevatedButton startButton = ElevatedButton(
+  final ElevatedButton startButton = ElevatedButton(
       onPressed: () {},
       style: ElevatedButton.styleFrom(
         primary: Colors.white,

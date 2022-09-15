@@ -71,7 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {
       onPressed: () {},
       style: ElevatedButton.styleFrom(
         primary: Colors.white,
-        padding: const EdgeInsets.symmetric(vertical: 28, horizontal: 120),
+        padding: const EdgeInsets.symmetric(vertical: 28, horizontal: 160),
       ),
       child: const Text(
         'Start',

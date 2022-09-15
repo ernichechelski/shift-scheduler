@@ -34,10 +34,42 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
+      body: Container(
+        color: Colors.blueAccent,
+        child: Center(
+          child: Column(children: [
+            const Padding(padding: const EdgeInsets.symmetric(vertical: 60, horizontal: 0)),
+            Text(
+              widget.title,
+              style: const TextStyle(
+                fontSize: 60,
+                color: Colors.white,
+                fontFamily: 'Pacifico',
+              ),
+            ),
+            const Padding(padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 0)),
+            const Icon(
+              Icons.calendar_month_outlined,
+              color: Colors.white,
+              size: 250,
+            ),
+            const Spacer(),
+            ElevatedButton(
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.white,
+                  padding: const EdgeInsets.symmetric(vertical: 28, horizontal: 120),
+                ),
+                child: const Text(
+                  'Start',
+                  style: TextStyle(
+                    fontSize: 26,
+                    color: Colors.blueAccent,
+                  ),
+                )),
+            const Padding(padding: EdgeInsets.symmetric(vertical: 40, horizontal: 0)),
+          ]),
+        ),
       ),
     );
   }

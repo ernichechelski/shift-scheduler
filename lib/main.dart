@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/login',
       routes: {
         '/login': (context) => const LoginScreen(),
-        '/shifts': (context) => ShiftsScreen(),
+        '/shifts': (context) => const ShiftsScreen(),
         '/settings': (context) => const SettingsScreen(),
       }
     );

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shift_scheduler/components/shiftsListComponent.dart';
 
 class ShiftsScreen extends StatefulWidget {
-  ShiftsScreen({Key? key}) : super(key: key);
+  const ShiftsScreen({Key? key}) : super(key: key);
 
   @override
   State<ShiftsScreen> createState() => _ShiftsScreenState();
@@ -14,7 +14,7 @@ class _ShiftsScreenState extends State<ShiftsScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blueAccent,
-        title: Text('Shifts'),
+        title: const Text('Shifts'),
         centerTitle: true,
         actions: [
           IconButton(

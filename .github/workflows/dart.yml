@@ -4,12 +4,14 @@
 # documentation.
 
 name: Dart
+uses: subosito/flutter-action@v2.7.0
 
 on:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+    
 
 jobs:
   build:
